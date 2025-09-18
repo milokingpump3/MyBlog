@@ -1,0 +1,160 @@
+/* Grundlayout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #D8CAB8;
+  color: #000000;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background: #D8CAB8;
+  border-bottom: 1px solid #D8CAB8;
+}
+
+header h1 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+/* Hero-Bereich */
+.hero {
+  position: relative;
+  background: #D8CAB8;
+}
+
+.banner {
+  height: 160px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+
+/* Intro mit überlappendem Bild */
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #D8CAB8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.bio {
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.bio h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.bio p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.social {
+  margin-top: 15px;
+}
+
+.social a {
+  margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Posts */
+.posts {
+  padding: 40px 20px;
+  background: #D8CAB8;
+}
+
+.posts h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.post-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Klickbare Post-Karten */
+.post-grid a.post {
+  display: block;
+  max-width: 250px;
+  max-height: 350px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.post-grid a.post:hover {
+  transform: scale(1.03);
+}
+
+.post-grid a.post img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 350px;
+  border-radius: 8px;
+}
+
+.post-grid a.post h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.blogs {
+  padding: 40px 20px;
+  background: #d5b387c1;
+  border-radius: 40px;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.MS{
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  border-top: 2.5px solid #d6a566;
+}
+.MS h2{
+  margin-left: 20px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #D8CAB8;
+  font-size: 14px;
+}
